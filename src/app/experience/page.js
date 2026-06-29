@@ -128,11 +128,6 @@ export default function ExperiencePage() {
               );
             })}
           </div>
-
-          {/* Info Card for future content */}
-          <div className="mt-12 p-6 rounded-2xl border border-dashed border-white/10 text-center text-sm text-gray-500">
-            Have additional detail pages or PDF resumes to link? Send me the details and we&apos;ll integrate them here.
-          </div>
         </div>
       </main>
 

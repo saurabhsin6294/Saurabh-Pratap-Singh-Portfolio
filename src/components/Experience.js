@@ -66,7 +66,9 @@ export default function Experience() {
                   ))}
                   {exp.points.length > 2 && (
                     <li className="text-xs text-cyan-500/80 font-mono pl-3.5">
-                      + {exp.points.length - 2} more accomplishments...
+                      <Link href={`/experience#${exp.id}`} className="hover:text-cyan-300 hover:underline transition-colors">
+                        + {exp.points.length - 2} more accomplishments...
+                      </Link>
                     </li>
                   )}
                 </ul>
@@ -82,9 +84,12 @@ export default function Experience() {
                     </span>
                   ))}
                   {exp.tags.length > 5 && (
-                    <span className="px-2.5 py-0.5 rounded-md bg-neutral-900/50 border border-dashed border-white/10 text-[10px] font-mono text-gray-500">
+                    <Link
+                      href={`/experience#${exp.id}`}
+                      className="px-2.5 py-0.5 rounded-md bg-neutral-900/50 border border-dashed border-white/10 text-[10px] font-mono text-gray-500 hover:text-cyan-400 hover:border-cyan-500/30 hover:bg-cyan-500/5 transition-all"
+                    >
                       +{exp.tags.length - 5} more
-                    </span>
+                    </Link>
                   )}
                 </div>
               </div>

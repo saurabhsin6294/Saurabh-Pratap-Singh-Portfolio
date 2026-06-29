@@ -21,15 +21,13 @@ export default function Footer() {
           <p className="text-sm text-gray-400 font-semibold">
             © {new Date().getFullYear()} {personalInfo.name}. All rights reserved.
           </p>
-          <p className="text-xs text-gray-500 font-mono">
-            Handcrafted with Next.js, React & Tailwind CSS.
-          </p>
+         
         </div>
 
         {/* Center: Navigation Links */}
         <div className="flex gap-6 text-sm font-semibold text-gray-400">
-          <Link href="#about" className="hover:text-cyan-400 transition-colors">
-            About
+          <Link href="/about" className="hover:text-cyan-400 transition-colors">
+            About Me
           </Link>
           <Link href="#projects" className="hover:text-cyan-400 transition-colors">
             Projects

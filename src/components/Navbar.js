@@ -22,7 +22,7 @@ export default function Navbar() {
   }, []);
 
   const navLinks = [
-    { name: "About", href: "#about", icon: User },
+    { name: "About Me", href: "/about", icon: User },
     { name: "Skills", href: "#skills", icon: Code2 },
     { name: "Projects", href: "#projects", icon: Briefcase },
     { name: "Experience", href: "#experience", icon: Briefcase },
@@ -44,8 +44,8 @@ export default function Navbar() {
               <span className="h-9 w-9 rounded-xl bg-gradient-to-tr from-cyan-500 to-violet-500 flex items-center justify-center text-black font-bold text-lg shadow-md shadow-cyan-500/20 group-hover:scale-105 transition-transform">
                 S
               </span>
-              <span className="font-sans font-bold text-lg tracking-tight bg-gradient-to-r from-gray-100 to-gray-300 group-hover:text-cyan-400 transition-colors">
-                Saurabh Pratap
+              <span className="font-sans font-bold text-lg tracking-tight text-white group-hover:text-cyan-400 transition-colors">
+                Saurabh Pratap Singh
               </span>
             </Link>
           </div>
@@ -91,7 +91,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       <div
-        className={`md:hidden absolute top-full left-0 right-0 glass transition-all duration-300 ${
+        className={`md:hidden absolute top-full left-0 right-0 bg-neutral-950/98 backdrop-blur-xl border-b border-white/10 transition-all duration-300 ${
           isOpen ? "opacity-100 translate-y-0 pointer-events-auto" : "opacity-0 -translate-y-2 pointer-events-none"
         }`}
       >

@@ -51,7 +51,7 @@ export const portfolioData = {
       company: "FirstShake",
       location: "Remote",
       duration: "Jul 2025 – Jul 2026",
-      link: "https://firstshake.com", // Placeholder
+      link: "https://tryfirstshake.com/",
       points: [
         "Developed a full-stack e-commerce platform using PHP (Laravel) for backend and Tailwind CSS for frontend.",
         "Built two core portals: Brand Portal (brand onboarding, product listing, order management) and Creator Portal (influencer campaign management, affiliate tracking).",
@@ -66,7 +66,7 @@ export const portfolioData = {
       company: "FirstShake",
       location: "Remote",
       duration: "Jul 2025 – Jul 2026",
-      link: "https://firstshake.com", // Placeholder
+      link: "https://tryfirstshake.com/",
       points: [
         "Performed functional, regression, and UI testing across Brand Portal and Creator Portal features.",
         "Documented and tracked bugs using Jira; coordinated resolution with the development team via Slack and Loom video recordings.",
@@ -97,7 +97,7 @@ export const portfolioData = {
       description: "An advanced e-commerce platform encompassing a Brand Portal (product listing, order management, Shopify synchronization) and a Creator Portal (influencer marketing campaigns, affiliate referral tracking).",
       category: "Professional Experience",
       tech: ["Laravel", "Tailwind CSS", "Shopify API", "MySQL"],
-      link: "#"
+      link: "https://tryfirstshake.com/"
     },
     {
       title: "Online Exam Portal with Anti-Cheating Features",
