@@ -21,9 +21,7 @@ export default function Footer() {
           <p className="text-sm text-gray-400 font-semibold">
             © {new Date().getFullYear()} {personalInfo.name}. All rights reserved.
           </p>
-          <p className="text-xs text-gray-500 font-mono">
-            Handcrafted with Next.js, React & Tailwind CSS.
-          </p>
+         
         </div>
 
         {/* Center: Navigation Links */}
