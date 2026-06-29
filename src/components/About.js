@@ -1,7 +1,8 @@
 "use client";
 
 import { portfolioData } from "@/data/portfolioData";
-import { User, ShieldAlert, Award, FileText, CheckCircle2 } from "lucide-react";
+import { User, ShieldAlert, Award, ArrowRight, CheckCircle2 } from "lucide-react";
+import Link from "next/link";
 
 export default function About() {
   const { personalInfo } = portfolioData;
@@ -14,17 +15,17 @@ export default function About() {
   ];
 
   return (
-    <section id="about" className="py-20 bg-neutral-950/40 relative">
+    <section id="introduction" className="py-20 bg-neutral-950/40 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Heading */}
         <div className="flex flex-col items-center text-center mb-16">
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 text-xs font-semibold uppercase tracking-wider mb-3">
             <User className="w-3.5 h-3.5" />
-            About Me
+            Introduction
           </div>
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-white">
-            Professional Profile & Experience
+            Brief Introduction
           </h2>
           <div className="h-1 w-20 bg-gradient-to-r from-cyan-500 to-indigo-500 rounded-full mt-4" />
         </div>
@@ -67,6 +68,17 @@ export default function About() {
                   <p className="text-sm text-gray-400 mt-1">Strong QA testing skills ensuring high production readiness, handling regression and functional tests.</p>
                 </div>
               </div>
+            </div>
+
+            {/* Read More button linking to dedicated /about page */}
+            <div className="pt-6">
+              <Link
+                href="/about"
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 hover:bg-cyan-500 hover:text-black hover:border-transparent transition-all duration-300 text-sm font-semibold shadow-sm"
+              >
+                Read More About Me
+                <ArrowRight className="w-4 h-4" />
+              </Link>
             </div>
           </div>
 

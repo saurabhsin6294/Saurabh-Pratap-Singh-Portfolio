@@ -28,8 +28,8 @@ export default function Footer() {
 
         {/* Center: Navigation Links */}
         <div className="flex gap-6 text-sm font-semibold text-gray-400">
-          <Link href="#about" className="hover:text-cyan-400 transition-colors">
-            About
+          <Link href="/about" className="hover:text-cyan-400 transition-colors">
+            About Me
           </Link>
           <Link href="#projects" className="hover:text-cyan-400 transition-colors">
             Projects
